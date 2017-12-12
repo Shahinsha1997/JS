@@ -1,0 +1,208 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Pulse</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://pulse.zcodeusers.com/clinic/css/clinic.css" >
+        <script src="https://pulse.zcodeusers.com/clinic/js/clinic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    </head>
+    <body>
+        <div class="maindiv" >
+            <p style="display:none" id="roleid"></p>
+            <p style="display:none" id="mailid"></p>
+            <div class="homehead" >
+                <div class="icondDiv">
+                    <img src="https://pulse.zcodeusers.com/clinic/images/heart.png" class='symbol'/>
+                </div>
+                <span class='applogo' >Pulse</span>
+                <div style="float: right;">
+                    <div id="userName" ></div>
+                    <div id="userimg"></div>
+                </div>
+                <div class="rightpop">
+                    <div class="mypro">
+                        <div class="userim"></div>
+                    </div>
+                    <div style="padding: 0px 10px 30px 10px;border-bottom: 0.1px solid #8d8e90;">
+                       <p id="nameid" ></p>
+                       <p id="emailid"></p>
+                       <button class="signoutbtn" >Sign Out</button>
+                    </div>
+                </div>
+            </div>
+            <div class="underDiv" >
+                <div class="secmainDiv">
+                    <ul class="optul">
+                        <li class="optli homepage" onclick="window.location.href='/home'" >
+                            <i class="fa fa1 fa-home"></i>
+                            <span class="opttext" >Home</span>
+                        </li>
+                        <li id="appointments" class="optli" >
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <span class="opttext" >Appointments</span>
+                        </li>
+                        <li id="patientdetails" class="optli" >
+                            <i class="fa fa3 fa-file-text"></i>
+                            <span class="opttext" >Patient Records</span>
+                        </li>
+                        <!--<li id="health" class="optli" >
+                            <i class="fa fa4 fa-medkit"></i>
+                            <span class="opttext" >Health Tips</span>
+                        </li>-->
+                        <li id="addreceptionist" class="optli" >
+                            <i class="fa fa5 fa-plus-circle" aria-hidden="true"></i>
+                            <span id="add" class="opttext" >Add Receptionist</span>
+                        </li>
+                        <li id="apply" class="optli">
+                            <i class="fa fa6 fa-calendar"></i>
+                            <span class="opttext" >Apply Appointment</span>
+                        </li>
+                        <li class="optli" id="consult">
+                            <i class="fa fa7 fa-comments" aria-hidden="true"></i>
+                            <span class="opttext">Consult</span>
+                        </li>
+                        <li class="optli" id="addcheckup" >
+                            <i class="fa fa9 fa-table" aria-hidden="true"></i>
+                            <span class="opttext" >Add Lab Results</span>
+                        </li>
+                        <li class="optli" id="myDetails">
+                            <i class="fa fa8 fa-pencil-square-o" aria-hidden="true"></i>
+                            <span class="opttext" >My Profile</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="appointmentDiv" >
+                    <div class="appointmentlist" >
+                        <p class="appoint">All Appointments</p>
+                       <!-- <select>
+                            <option id="all"   >All Files</option>
+                            <option id="today" >Today</option>
+                            <option id="tmrw"  >Tommorow</option>
+                            <option id="thsweek" >This Week</option>
+                        </select>-->
+                    </div>
+                    <div class="apointdiv"></div>
+                </div>
+                
+                <div class="patientapnts" >
+                    <p class="appoint">My Appointments</p>
+                    <div class="apointdiv"></div>
+                </div>
+                
+                <div class="applyappointment">
+                    <div class="applyinnrdiv">
+                        <p class='apnttext' >Select Time</p>
+                        <div class="Shdiv" >
+                            <div class="crteEvent" >
+                                <div class="chDiv">
+                                    <div class="mochnge" >
+                                      <span id="Gemonth" ></span>
+                                      <i id="Frw" class="fa fa-angle-right" aria-hidden="true"></i>
+                                     <!--<input  class="chng Frwd" title="Next" type="button" value="&#x2771;" /> -->
+                                    </div>
+                                   <div style="clear:both;"></div>
+                                </div>
+                                <div style="clear;both" ></div>
+                            </div>
+                            <div class="cal" ></div>
+                        </div>
+                        <div class="timediv" >
+                            <div class="morning" >
+                                <p class="timeday">Morning</p>
+                                <input class="time" type="button" value="9:00 AM" />
+                                <input class="time" type="button" value="9:30 AM" />
+                                <input class="time" type="button" value="10:00 AM"/>
+                                <input class="time" type="button" value="10:30 AM" />
+                                <input class="time" type="button" value="11:00 AM" />
+                                <input class="time" type="button" value="11:30 AM"/>
+                            </div>
+                            <div class="aftrnoon" >
+                                <p class="timeday">After Noon</p>
+                                <input class="time" type="button" value="12:00 PM" />
+                                <input class="time" type="button" value="12:30 PM" />
+                                <input class="time" type="button" value="1:00 PM"  />
+                                <input class="time" type="button" value="1:30 PM" />
+                                <input class="time" type="button" value="2:00 PM" />
+                                <input class="time" type="button" value="2:30 PM" />
+                                <input class="time" type="button" value="3:00 PM" />
+                                <input class="time" type="button" value="3:30 PM" />
+                                <input class="time" type="button" value="4:00 PM" />
+                                <input class="time" type="button" value="4:30 PM" />
+                            </div>
+                            <div class="evening" >
+                                <p class="timeday">Evening</p>
+                                <input class="time" type="button" value="5:00 PM" />
+                                <input class="time" type="button" value="5:30 PM" />
+                                <input class="time" type="button" value="6:00 PM" />
+                                <input class="time" type="button" value="6:30 PM" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="editProfile">
+                    <div class="picture">
+                        <div class="image"></div>
+                        <p class="email" id="editemail"></p>
+                    </div>
+                    <div class="usrdetails">
+                        <input class="editdetailipt" placeholder="Name" id='name' />
+                        <input class="editdetailipt" placeholder="Phone Number" id='phone' />
+                        <input class="clinic editdetailipt" placeholder="Clinic Name"/> 
+                        <input class="editdetailipt" placeholder="Date of Birth" id='dob' />
+                        <input class="editdetailipt" id="paswd" placeholder="Password" type="password"/>
+                        <button class='invitebutton' id="update">Update</button>
+                    </div>
+                </div>
+                
+                <div class="consultdiv" >
+                    <div class="contntdiv">
+                        <div class="imgdv"></div>
+                        <div class="postdiv" contenteditable="true" >Ask your Queries here</div>
+                        <button id="share">Share</button>
+                        <div class="feeddiv"></div>
+                    </div>
+                </div>
+                
+                <div class="checkupdiv" >
+                    <p class="txt">Add Results</p>
+                    <div class="testdiv">
+                        <div class="fst">
+                            <input class="age general" placeholder="Age" />
+                            <input class="height general" placeholder="Height in cms" />
+                            <input class="weight general" placeholder="Weight in Kg" />
+                            <select class="sex general">
+                                <option>Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                            <p class="txts">Haemoglobin</p>
+                            <input class="haemo general" placeholder="Haemoglobin gm/dL"/>
+                            <input class="pcv general" placeholder="Packed Cell Volume %" />
+                        </div>
+                        <div class="scnd">
+                            <p class="txts">Glucose</p>
+                            <input class="fasting general" placeholder="Glucose fasting mg/dL"/>
+                            <input class="post general" placeholder="Glucose post prandial mg/dL"/>
+                            <p class="txts"></p>
+                            <input class="totalch general" placeholder="Total Cholesterol mg/dL" />
+                            <input class="trygly general" placeholder="tryglycerides mg/dL" />
+                            <input class="hdl general" placeholder="HDL Cholesterol mg/dL"/>
+                            <input class="nonhdl general" placeholder="Non HDL Cholesterol mg/dL"/>
+                            <input class="ldl general" placeholder="LDL Cholesterol mg/dL"/>
+                            <button id="saveresults">Save</button>
+                        </div>
+                    </div>
+                </div>
+                <div style='clear:both;'></div>
+            </div>
+        </div>
+        <div class="invitediv">
+            <input class="emailinput" placeholder="Enter the Email"  />
+            <button class="invitebutton" >Invite</button>
+        </div>
+    </body>
+</html>

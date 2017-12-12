@@ -1,0 +1,754 @@
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family:sans-serif;
+}
+.maindiv{
+    height:100%;
+    width: 100%;
+    margin: auto;
+}
+.imdiv{
+    width: 80%;
+    height: 92%;
+    margin: auto;
+}
+.backdropDiv{
+    height: 426px;
+    width: 100%;
+    background:url('https://pulse.zcodeusers.com/clinic/images/enrollment-bg-2016.jpg');
+    background-size:cover;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+.backdropImg{
+    background-repeat:no-repeat;
+    width:100%;
+    height:100%;
+}
+.head{
+    height:60px;
+    width:100%;
+}
+.docsymbol{
+    height: 46px;
+    color: white;
+    padding: 12px 0px 0px 18px;
+}
+.icondDiv{
+    display:inline;
+}
+.applogo{
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+    vertical-align: 13px;
+    margin-left: 6px;
+    font-weight: bold;
+}
+.signButton{
+    height: 29px;
+    width: 80px;
+    font-size: 13px;
+    color: #c5bdbd;
+    border-radius: 16px;
+    background: none;
+    border: 1px solid #cabcbc;
+    margin: 22px 16px 0px 0px;
+    outline: none;
+
+}
+.signButton:hover{
+    cursor:pointer;
+    color:#1b6bce;
+    border:1px solid #1b6bce;
+    transform:scale(1.1);
+}
+.descrp{
+    width: 26%;
+    margin: 15px 0px 0px 105px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+.linhead{
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    margin: 40px 0px 0px 100px;
+    color: white;
+}
+.featre{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid gray;
+    background: ghostwhite;
+}
+.fa{
+    color:gray;
+    font-size:22px;
+ }
+.feText{
+    color: #22697d;
+    margin: 12px 0px 0px 16px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.forms{
+    height: 340px;
+    width: 305px;
+    box-shadow: 0px 0px 2px white;
+    background: white;
+    position: absolute;
+    left: 40%;
+    top: 80px;
+    border-radius: 5px;;
+}
+.forms1{
+    box-shadow: 0px 0px 5px;
+    height: 480px;
+    margin:auto;
+    width:305px;
+    border-radius:3px;
+    margin-top: 120px;
+}
+.headings{
+    height: 90px;
+    border-bottom: 1px solid gray;
+}
+.signupform{
+    height: 250px;
+    width: 305px;
+}
+.signinform{
+    height: 230px;
+    width: 320px;
+    box-shadow: 0px 0px 5px;
+    background: white;
+    position: absolute;
+    top: 130px;
+    left: 40%;
+    border-radius: 5px;
+}
+.firstDiv,.secDiv{
+    height:200px;
+}
+#photo{
+    height: 65px;
+    width: 65px;
+    border-radius: 33px;
+    margin: auto;
+    background: url('https://pulse.zcodeusers.com/clinic/images/nobody_m.original.jpg');
+    background-size: cover;
+}
+.imginput{
+    margin: 10px 0px 0px 5px;
+    height: 42px;
+    width: 55px;
+    opacity:0;
+}
+.usrdetails{
+    width: 28%;
+    margin: auto;
+    margin-top: 30px;
+}
+.editdetailipt{
+    margin: 18px 0px 0px 45px;
+    height: 35px;
+    width: 220px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: 15px;
+    background: white;
+}
+.detail{
+    font-size: 25px;
+    color: gray;
+    margin: 15px 0px 0px 30px;
+    font-family: sans-serif;
+}
+.detailinput,.gender,.profile{
+    margin: 18px 0px 0px 45px;
+    height: 30px;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-left: 10px;
+    font-size: 15px;
+    background: white;
+}
+.logtxt,.signtxt{
+    height: 53px;
+    width: 67px;
+    float: left;
+}
+.txt{
+    font-family: sans-serif;
+    color: #ef7483;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.testdiv{
+    height: 435px;
+    width: 80%;
+    margin: auto;
+    border: 1px solid gray;
+    margin-top: 25px;
+}
+.gender,.profile{
+    width: 212px;
+    color: gray;
+    padding-left: 7px;
+    box-shadow: 0 0 black;
+}
+#createAcc{
+    height: 27px;
+    width: 100px;
+    margin: 17px 0px 0px 82px;
+}
+.optionDiv{
+    height: 650px;
+    width: 64%;
+    box-sizing: border-box;
+    margin: auto;
+    background: white;
+}
+.opImage{
+    height: 580px;
+    margin-top: 35px;
+}
+.opDiv{
+    height: 405px;
+    background: #1a508e;
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+.indiv{
+    height: 220px;
+    width: 200px;
+    box-shadow: 0px 0px 3px lightslategrey;
+    float: left;
+    margin: 50px 0px 0px 60px;
+    background: white;
+    border-radius: 4px;
+}
+.innerDiv1{
+    margin-left:165px;
+}
+.consult_image{
+    background:url('https://pulse.zcodeusers.com/clinic/images/consult.png');
+    height: 139px;
+    background-size: cover;
+}
+.record_image{
+    height: 139px;
+    background-size: cover;
+}
+.featext{
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+#userName{
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    text-align: right;
+    width: 500px;
+    box-sizing: border-box;
+    float: left;
+    padding: 13px 16px 0px 0px;
+}
+#userimg{
+    height: 34px;
+    width: 34px;
+    border-radius: 18px;
+    border: 1px solid white;
+    float: left;
+    margin: 12px 10px 0px 0px;
+}
+.picture{
+    box-sizing: border-box;
+    padding: 7px 0px 24px 0px;
+    border-bottom: 1px solid gray;
+}
+.image{
+    border: 1px solid black;
+    margin: auto;
+    height: 65px;
+    width: 65px;
+    border-radius: 33.5px;
+}
+.email{
+    text-align:center;
+    margin-top:6px;
+    color:teal;
+    font-family:sans-serif;
+    font-size:16px;
+}
+.invitediv{
+    height:160px;
+    width:310px;
+    background:white;
+    box-shadow:0px 0px 2px;
+    position: absolute;
+    top: 220px;
+    left: 45%;
+}
+.emailinput{
+    height: 28px;
+    width: 200px;
+    margin: 54px 0px 0px 54px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 7px;
+}
+.invitebutton{
+    height: 25px;
+    width: 70px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    background: #16325a;
+    color: white;
+    margin: 22px 116px;
+}
+.homehead{
+    height:60px;
+    background:#16325a;
+}
+.symbol{
+    height: 42px;
+    color: white;
+    padding: 10px 0px 0px 15px;
+}
+.rightpop{
+    height: 224px;
+    width: 230px;
+    box-shadow: 0px 0px 3px;
+    background: white;
+    position: absolute;
+    right: 10px;
+    top: 70px;
+}
+.mypro{
+    height: 75px;
+    background: linear-gradient(to right,rgb(239, 116, 131) 20%,#bf7087 100%);
+    box-sizing: border-box;
+    padding: 30px 0px 0px 86px;
+}
+.userim{
+    height: 56px;
+    width: 56px;
+    border-radius: 28px;
+    background: #16325a;
+}
+#nameid,#emailid{
+    font-family:sans-serif;
+    text-align:center;
+    word-wrap: break-word;
+}
+#nameid{
+    margin-top:30px;
+    font-size:18px;
+}
+#emailid{
+    margin-top: 6px;
+    font-size: 13px;
+}
+.signoutbtn{
+    height: 29px;
+    width: 86px;
+    font-size: 14px;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    margin: 18px 0px 0px 64px;
+    background:linear-gradient(to right, rgb(235, 116, 131), rgb(202, 113, 134));
+    color: white;
+}
+.signoutbtn:hover{
+    cursor:pointer;
+}
+.underDiv{
+    width:100%;
+    height:590px;
+    background: #f1f1f1;
+}
+.secmainDiv{
+    float: left;
+    width: 18%;
+}
+.optli{
+    height: 60px;
+    border-bottom: 1px solid;
+    border-right: 1px solid gray;
+}
+.fa{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    color:white;
+    background:#16325a;
+    box-sizing:border-box;
+    margin: 10px 9px 0px 12px;
+    padding: 8px 0px 0px 9px;
+    font-size: 25px;
+}
+.fa1{
+    padding: 7px 0px 0px 8px;
+}
+.fa3{
+    font-size: 22px;
+    padding: 9px 0px 0px 11px;
+}
+.fa4{
+    font-size:22px;
+}
+.fa6{
+    font-size:23px;
+}
+.fa7{
+    padding: 6px 0px 0px 7px;
+}
+.fa8{
+    font-size: 23px;
+    padding: 9px 0px 0px 10px;
+}
+.fa5:hover{
+    background:white;
+    color:#ef7483;
+}
+.opttext{
+    color:#16325a;
+    font-family:sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    vertical-align: 2px;
+}
+.optul{
+    background:white;
+}
+li{
+    list-style-type:none;
+}
+li:hover{
+    cursor:pointer;
+}
+
+.appointmentDiv,.applyappointment,.patientapnts,.editProfile,.consultdiv,.checkupdiv{
+    width: 82%;
+    float: left
+}
+.applyinnrdiv{
+    box-sizing:border-box;
+    padding: 0px 0px 0px 45px;
+}
+.timediv{
+    height: 300px;
+    width: 482px;
+    box-shadow: 0px 0px 1px;
+    margin: 20px 90px 0px 0px;
+    float: right;
+}
+.morning,.aftrnoon,.evening{
+    height: 90px;
+    border-bottom: 1px solid darkgray;
+}
+.morning,.aftrnoon{
+    padding-bottom: 4px;
+}
+.timeday{
+    font-size: 17px;
+    color: gray;
+    font-family: sans-serif;
+    margin: 9px 0px 0px 21px;
+}
+.time{
+    height: 30px;
+    width: 80px;
+    background: none;
+    border: none;
+    font-size: 15px;
+    opacity: 0.9;
+    outline: none;
+    margin-left: 10px;
+}
+.apnttext{
+    font-size: 21px;
+    font-family: sans-serif;
+    color: #16325a;
+    margin: 21px 0px 0px 0px;
+}
+.hour{
+    height: 60px;
+    width: 70px;
+    float:left;
+    background:#f7f7f7;
+    border-bottom: 1px solid gray;
+}
+.back,.next{
+    float: left;
+    width: 30px;
+    height: 60px;
+    background:#f7f7f7;
+    border-bottom: 1px solid gray;
+}
+.appoint{
+    color:#16325a;
+    font-family:sans-serif;
+    font-size: 18px;
+}
+.appointmentlist{
+    height: 60px;
+    margin: auto;
+    border-bottom: 1px solid;
+}
+.apointmnts{
+    height: 30px;
+    width: 300px;
+    margin: 25px 0px 0px 60px;
+}
+.patapnt,.apointmnts{
+    color: #16325a;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+.postdiv{
+    border-radius: 3px;
+    padding: 7px 0px 9px 8px;
+    margin: 7px 0px 0px 55px;
+    border: 1px solid lightgray;
+    background: white;
+}
+#share{
+    height: 26px;
+    width: 69px;
+    background: #16325a;
+    border: 1px solid gray;
+    border-radius: 4px;
+    float: right;
+    margin-top: 6px;
+    color: white;
+}
+.contntdiv{
+    width: 52%;
+    padding-top: 41px;
+    margin: auto
+}
+.imgdv{
+    height:34px;
+    width:34px;
+    border-radius:18px;
+    border:1px solid;
+    float:left;
+    margin-top: 7px;
+}
+.feeddiv{
+    overflow: scroll;
+    height: 455px;
+    margin-top: 50px;
+    overflow-x: auto;
+}
+ .feeddiv::-webkit-scrollbar{
+    width: 0px;
+    background-color: white
+} 
+ .feeddiv::-webkit-scrollbar-thumb {
+    background-color: gray;
+   
+}
+ .feeddiv::-webkit-scrollbar-thumb:active{
+    background-color:#4b87c8;
+    width:7px;
+}
+.feeddiv::-webkit-scrollbar-track {
+   background-color: white;
+}
+.nofeed{
+    text-align: center;
+    margin-top: 48px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: burlywood;
+}
+.mnfeedv{
+    margin-top: 65px;
+}
+.feedin{
+    float: left;
+    margin: 9px 0px 0px 18px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background: white;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 13px 0px 13px 15px;
+}
+.contdiv{
+    word-wrap: break-word;
+    padding: 12px 25px 8px 1px;
+}
+.dmt,.conver{
+    font-size: 12px;
+    color: #5b5c61;
+    font-family: sans-serif;
+    margin-top: 3px;
+}
+.conver{
+    font-size:14px;
+}
+b{
+    color: #16325a;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.elip{
+    background: none;
+    color: #16325a;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+.optiondv{
+    height: 53px;
+    width: 66px;
+    box-shadow: 0px 0px 1px;
+    float: right;
+    background: white;
+    margin: 16px 0px 0px 0px;
+    border-radius: 1px;
+}
+.optbtns{
+    height: 24px;
+    width: 100%;
+    background: none;
+    border: none;
+    color: black;
+    opacity: 0.7;
+    outline:none;
+}
+.updte{
+    height: 25px;
+    width: 65px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    color: white;
+    background: #16325a;
+    float: right;
+    margin: 11px 10px 0px 3px;
+}
+.general{
+    height: 30px;
+    width: 200px;
+    border: 1px solid gray;
+    background: white;
+    font-size: 14px;
+    padding-left: 8px;
+    letter-spacing: 0.3px;
+    display: block;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 20px;
+}
+.fst,.scnd{
+    width: 50%;
+    float: left;
+}
+#saveresults{
+    height: 28px;
+    width: 68px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background: #16325a;
+    color: white;
+    font-size: 15px;
+}
+.btn{
+    height: 22px;
+    width: 68px;
+}
+/*Calendar*/
+ .Shdiv::-webkit-scrollbar{
+    width: 0px;
+    background-color: white
+} 
+ .Shdiv::-webkit-scrollbar-thumb {
+    background-color: gray;
+   
+}
+ .Shdiv::-webkit-scrollbar-thumb:active{
+    background-color:#4b87c8;
+    width:0px;
+}
+.Shdiv{
+    display:inline-block;
+}
+.cal{
+    width:310px;
+}
+.crteEvent{
+    height: 35px;
+}
+.mochnge{
+    float: left;
+    width: 280px;
+    height: 38px;
+    text-align:right;
+}
+#Gemonth{
+    font-size: 17px;
+    background: none;
+    font-family: 'Oswald', sans-serif;
+    color: teal;
+    vertical-align: 4px;
+}
+#Frw{
+    padding: 0px 0px 0px 10px;
+    background: none;
+    height: 26px;
+    width: 26px;
+    margin-left: 5px;
+    color: #16325a;
+}
+#Frw:hover{
+    cursor:pointer;
+    color: teal;
+}  
+.daYs{
+    height: 41px;
+    width: 41px;
+    font-size: 14px;
+    background: white;
+    color:#008080;
+    border: none;
+    font-family:'Oswald', sans-serif;
+    outline: none;
+    float:left
+}
+.fdays{
+    color: rgba(13, 13, 23, 0.81);
+    font-family: sans-serif;
+    float:left;
+}
+/*background: linear-gradient(to right, rgb(0, 201, 255), rgb(146, 254, 157));*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

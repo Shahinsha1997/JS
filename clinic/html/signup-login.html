@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Pulse</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://pulse.zcodeusers.com/clinic/css/clinic.css" > 
+        <script src="https://pulse.zcodeusers.com/clinic/js/clinic.js"></script>
+    </head>
+    <body>
+        <div class="maindiv" >
+            <div class="backdropDiv">
+                <div class="head" >
+                    <div class="icondDiv">
+                        <img src="https://pulse.zcodeusers.com/clinic/images/heart.png" class='docsymbol'/>
+                    </div>
+                    <span class='applogo' >Pulse</span>
+                    <div style="float: right;">
+                        <button class="signButton" id="log" >Login</button>
+                        <button class="signButton" id="sign" >Sign Up</button>
+                    </div>
+                </div>
+                <p class="linhead" >We care for your health</p>
+                <div class="descrp" >Now you can access your health information anytime on our online health portal. Also you can find  hospital lab results. Select "Sign Up" to get started with Pulse today.</div>
+            </div>
+            <div class="optionDiv" >
+                <img src="https://pulse.zcodeusers.com/clinic/images/patient_flow.png" class="opImage"  />
+            </div>
+            <div class="opDiv">
+                <div class="featext" ><b style="font-size:35px">f</b>eatures list</div>
+                <div class="indiv innerDiv1">
+                    <p class="feText">Consult Online</p>
+                </div>
+                <div class="indiv innerDiv2">
+                    <p class="feText">Medical Records</p>
+                </div>
+                <div class="indiv innerDiv3">
+                    <p class="feText">Book Appointment</p>
+                </div>
+                <div class="indiv innerDiv4">
+                    <p class="feText">Health Tips</p>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        <div class="forms">
+            <div class="headings">
+               <div id="photo">
+                   <input type='file' class="imginput" />
+               </div>
+               <p class="txt" >Pulse</p>
+            </div>
+            <div class="signupform" >
+                <div class="firstDiv">
+                    <input class="detailinput" placeholder="Name" id='name' />
+                    <input class="detailinput" placeholder="Phone Number" id='phone' />
+                    <input class="detailinput" placeholder="Email" id='email' />
+                    <select class="gender detailinput" >
+                        <option>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                    <button id="nextdetail"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+                <div class="secDiv">
+                    <input class="clinic detailinput" placeholder="Clinic Name"/> 
+                    <input class="detailinput" placeholder="Date of Birth" id='dob' />
+                    <input class="detailinput" id="paswd" placeholder="Password" type="password"/>
+                    <input class="detailinput" id="paswd1" placeholder="Re-Enter Password" type="password"/>
+                    <button id="createAcc">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="signinform" >
+            <p>Sign In</p>
+            <input placeholder="Email" id="logemail" />
+            <input placeholder="Password" type="password" id="logpaswd" />
+            <button id="loginbtn" >Log In</button>
+        </div>
+      </div>
+    </body>
+</html>

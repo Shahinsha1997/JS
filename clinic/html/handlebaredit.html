@@ -1,0 +1,23 @@
+<script id="expressions-template" type="text/x-handlebars-template">
+                <div class="editProfile">
+                    <div class="picture">
+                        <div class="image"></div>
+                        <p class="email" >{{email}}</p>
+                    </div>
+                    <div class="usrdetails">
+                        <input class="detailinput" placeholder="Name" id='name' value={{Name}} />
+                        <input class="detailinput" placeholder="Phone Number" id='phone' value={{Phone}} />
+                        <input class="detailinput" placeholder="Email" id='email' value={{Email}} />
+                        <select class="gender detailinput" value={{Gender}} >
+                            <option>Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                        <input class="clinic detailinput" placeholder="Clinic Name" value={{Clinic}} /> 
+                        <input class="detailinput" placeholder="Date of Birth" id='dob' value={{dob}} />
+                        <input class="detailinput" id="paswd" placeholder="Password" type="password"/>
+                        <button id="update">Update</button>
+                    </div>
+                </div>
+                </script>
